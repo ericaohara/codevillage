@@ -1,0 +1,71 @@
+#first-v {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    // @include tab {
+    //     height: 59.7rem;
+    // }
+}
+
+.first-v__wrap-one {
+    width: 43%;
+    @include sp {
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+    }
+    position: relative;
+}
+
+.fv-logo {
+    height: 26%;
+    font-size: 3.8rem;
+    position: absolute;
+    top: 50%;
+    left: 10.7rem;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include sp {
+        top: 27.2rem;
+        left: 50%;
+        transform: translate(-25%,0);
+        flex-direction: column-reverse;
+        color: white;
+        width: 77%;
+        justify-content: center;
+    }
+
+    // @include tab {
+    //     left: 10%;
+    // }
+
+    &__one {
+        font-family: ヒラギノ明朝 Pro;
+        justify-content: center;
+        padding-left: 5.0rem;
+        @include sp {
+            font-size: 2.3rem;
+        }
+    }
+    &__two {
+        font-family: Zapfino,Regular;
+        margin-top: 4.8rem;
+        @include sp {
+            font-size: 2.8rem;
+        }
+
+    }
+}
+    
+.first-v__wrap-two {  
+    width: 57%;
+    @include sp {
+        width: 100%;
+    }
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+}
+

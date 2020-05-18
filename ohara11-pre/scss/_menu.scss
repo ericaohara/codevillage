@@ -1,0 +1,47 @@
+#menu {
+    padding: 29.6rem 10.7rem 12.2rem;
+    @include sp {
+        padding: 0 2.0rem;
+    }
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.menu {
+    width: 21%;
+    @include sp {
+        width: 100%;
+    }
+    &__title {
+        font-size: 3.0rem;
+        text-align: center;
+        margin-top: 3.0rem;
+        @include sp {
+            text-align: left;
+        }
+    }
+    &__content ,&__price {
+        font-size: 1.6rem;
+        margin-top: 3.0rem;
+
+    }
+    &__price {
+        font-size: 1.6rem;
+        margin-top: 3.0rem;
+        text-align: right;
+        @include sp {
+            margin-bottom: 6.3rem;
+        }
+    }    
+
+}
+
+.menu__img img{
+ width: 100%;
+}

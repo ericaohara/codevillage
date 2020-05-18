@@ -1,0 +1,72 @@
+#concept {
+   height: 96.0rem; 
+   padding: 29.0rem 10.7rem;
+   @include sp {
+       height: 71.0rem;
+       padding: 0 2.0rem;
+          background: linear-gradient(180deg,$right-beige 0%,$right-beige 30%,$beige 30%,$beige 100%);
+   }
+   background: linear-gradient(180deg,$right-beige 0%,$right-beige 45%,$beige 45%,$beige 100%);
+}
+.concept-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 41.3rem;
+    @include sp {
+        height: 50%;
+    }
+    &__one {
+        width: 63%;
+        @include sp {
+            width: 49%;
+            background-position: 85% 0;
+        }
+        background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash@2x.png);
+        background-size: cover;
+    }
+    &__two {
+        width: 36%;
+        @include sp {
+            width: 49%;
+            background-position: 95% 0;
+        }
+        background-image: url(../img/joel-mott-mNYL0surXh8-unsplash.png);
+        background-size: cover;
+        background-position: 50% 0;
+    }
+    
+}
+
+.concept {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include sp {
+        flex-direction: column;
+        height: 10%;
+    }
+    color: white;
+    margin: 6.9rem auto;
+    &__one{
+        font-size: 4.0rem;
+        font-family: ヒラギノ明朝 Pro;
+        width: 48%;
+        text-align: center;
+        @include tab {
+            font-size: 1.8rem;
+            padding-top: 5.0rem;
+        }
+    }
+    &__two{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        width: 46%;
+        padding-left: 5.7rem;
+        @include tab {
+            width: 100%;
+            padding: 1.8rem 0 6.3rem;
+        }
+    }
+}
